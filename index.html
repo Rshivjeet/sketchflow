@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Excalidraw Clone</title>
+    <link rel="stylesheet" href="logincss.css"> <!-- Link CSS -->
+</head>
+<body>
+    <button id="themeToggle">🌙 Toggle Mode</button>
+
+    <div class="form">
+        <form action="login.php" method="POST">
+            <label for="log" id="loglab">Login:</label>
+            <input type="email" name="email" id="log" required> <!-- Fixed name attribute -->
+            <br><br>
+
+            <label for="pass">Password:</label>
+            <input type="password" name="password" id="pass" required>
+            <br><br>
+
+            <!-- Guest Button -->
+            <button id="forgot" type="button" onclick="window.location.href='home2.html'">Guest</button>
+            <br><br>
+
+            <!-- Submit Button -->
+           </a><button id="Submit" type="submit">Submit</button>
+            <br><br>
+
+            <!-- Create Account Button -->
+            <button id="createAccount" type="button" onclick="window.location.href='signup.html'">Create Account</button>
+        </form>
+    </div>
+
+    <!-- Link JavaScript -->
+    <script src="loginjs.js"></script>
+</body>
+</html>

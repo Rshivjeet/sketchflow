@@ -1,0 +1,128 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e; /* Dark mode background */
+    color: white;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/* Form Container */
+.form {
+    background: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 320px;
+    transition: background 0.3s ease;
+}
+
+/* Light Mode Form */
+body.light-mode .form {
+    background: #f0f0f0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #3a3a3a;
+    color: white;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+body.light-mode input {
+    background: #fff;
+    color: black;
+}
+
+input:focus {
+    outline: 2px solid #007bff;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+/* Guest Button */
+#forgot {
+    background: #f39c12; /* Orange */
+    color: white;
+}
+
+#forgot:hover {
+    background: #e67e22;
+}
+
+/* Submit Button */
+#Submit {
+    background: #007bff; /* Blue */
+    color: white;
+}
+
+#Submit:hover {
+    background: #0056b3;
+}
+
+/* Theme Toggle Button */
+#themeToggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 15px;
+    font-size: 14px;
+    background: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#themeToggle:hover {
+    background: #666;
+}
+
+/* Light Mode Button */
+body.light-mode #themeToggle {
+    background: #ddd;
+    color: black;
+}
